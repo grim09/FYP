@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ede2dc"
+    android:dither="true"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/passwordField"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="82dp"
+        android:hint="Save"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="#505050" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/dOBField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailField"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:inputType="date"
+        android:textColor="#505050" />
+
+    <EditText
+        android:id="@+id/NameField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dOBField"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="#505050"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/NameField"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#505050" />
+
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+</RelativeLayout>

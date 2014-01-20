@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/centerPoint"
+        android:contentDescription="@string/desc"
+        android:layout_width="15dp"
+        android:layout_height="7dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:background="#000000" />
+
+    <ImageView
+        android:id="@+id/qr"
+        android:contentDescription="@string/desc"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/centerPoint"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/qr_icon1" />
+
+    <ImageView
+        android:id="@+id/map"
+        android:contentDescription="@string/desc"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/centerPoint"
+        android:layout_toRightOf="@+id/qr"
+        android:src="@drawable/map_icon1" />
+
+    <ImageView
+        android:id="@+id/quiz"
+        android:contentDescription="@string/desc"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/centerPoint"
+        android:layout_marginLeft="8dp"
+    	android:layout_marginRight="6dp"
+        android:src="@drawable/quiz_icon1" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:contentDescription="@string/desc"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/centerPoint"
+        android:layout_toRightOf="@+id/quiz"
+        android:src="@drawable/profile_icon1" />
+
+</RelativeLayout>
